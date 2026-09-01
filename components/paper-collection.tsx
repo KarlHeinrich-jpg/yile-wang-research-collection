@@ -114,8 +114,8 @@ export function PaperCollection() {
 
   useEffect(() => {
     document.title = selectedPaper
-      ? `${selectedPaper.shortTitle}｜王奕 · 个人论文集`
-      : '王奕 · 个人论文集';
+      ? `${selectedPaper.shortTitle}｜王毅乐 · 个人论文集`
+      : '王毅乐 · 个人论文集';
   }, [selectedPaper]);
 
   const results = useMemo<SearchResult[]>(() => {
@@ -278,7 +278,7 @@ export function PaperCollection() {
             </SheetTrigger>
             <SheetContent className="w-[88vw] max-w-[340px] gap-0 overflow-y-auto bg-sidebar p-0" side="left">
               <SheetHeader className="border-b px-5 py-5 text-left">
-                <SheetTitle className="font-serif">王奕 · 个人论文集</SheetTitle>
+                <SheetTitle className="font-serif">王毅乐 · 个人论文集</SheetTitle>
                 <SheetDescription>经济、环境与区域发展研究</SheetDescription>
               </SheetHeader>
               {nav}
@@ -287,7 +287,7 @@ export function PaperCollection() {
           <button className="flex min-w-0 items-center gap-3 rounded-xl text-left" onClick={() => updateLocation(null)} type="button">
             <span className="grid size-9 shrink-0 place-items-center rounded-xl bg-primary text-primary-foreground shadow-sm"><Library className="size-[18px]" /></span>
             <span className="hidden min-w-0 sm:block">
-              <span className="block truncate font-serif text-[15px] font-semibold tracking-wide">王奕 · 个人论文集</span>
+              <span className="block truncate font-serif text-[15px] font-semibold tracking-wide">王毅乐 · 个人论文集</span>
               <span className="block text-[9px] tracking-[0.15em] text-muted-foreground">RESEARCH COLLECTION</span>
             </span>
           </button>
