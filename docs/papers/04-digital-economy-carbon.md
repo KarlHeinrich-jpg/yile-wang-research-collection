@@ -43,6 +43,4 @@
 4. Discussion
 5. Conclusions
 
-{% hint style="info" %}
-DEI、CEI、耦合协调度与空间马尔可夫转移公式，以及省级地图和稳健性表格均保留在 PDF 原文中。
-{% endhint %}
+> **原文说明**：DEI、CEI、耦合协调度与空间马尔可夫转移公式，以及省级地图和稳健性表格均保留在 PDF 原文中。

@@ -45,6 +45,4 @@
 5. Empirical Analysis and Heterogeneity
 6. Conclusions and Implications
 
-{% hint style="warning" %}
-Word 原文包含 DML 与 GRF 的完整公式、变量表、模型结果图以及稳健性检验，请下载原文件查看。
-{% endhint %}
+> **原文说明**：Word 原文包含 DML 与 GRF 的完整公式、变量表、模型结果图以及稳健性检验，请下载原文件查看。

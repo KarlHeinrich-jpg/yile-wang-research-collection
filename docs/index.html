@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="王毅乐（Yile Wang）个人论文集：经济发展、数字化转型、绿色增长与区域治理研究。" />
+    <meta name="author" content="王毅乐（Yile Wang）" />
+    <meta name="theme-color" content="#0f4c5c" />
+    <meta property="og:title" content="王毅乐 · 个人论文集" />
+    <meta property="og:description" content="经济发展、数字化转型、绿色增长与区域治理研究" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://karlheinrich-jpg.github.io/yile-wang-research-collection/assets/cover.png" />
+    <title>王毅乐 · 个人论文集</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@5.0.0/lib/themes/vue.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="app">正在加载王毅乐个人论文集……</div>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        },
+        svg: { fontCache: 'global' },
+      };
+
+      window.$docsify = {
+        name: '王毅乐 · 个人论文集',
+        nameLink: '#/',
+        repo: 'https://github.com/KarlHeinrich-jpg/yile-wang-research-collection',
+        homepage: 'README.md',
+        coverpage: true,
+        onlyCover: false,
+        loadSidebar: true,
+        loadNavbar: true,
+        mergeNavbar: true,
+        relativePath: true,
+        auto2top: true,
+        executeScript: true,
+        maxLevel: 4,
+        subMaxLevel: 3,
+        alias: {
+          '/.*/_sidebar.md': '/_sidebar.md',
+          '/.*/_navbar.md': '/_navbar.md',
+        },
+        search: {
+          placeholder: '搜索论文、方法或关键词',
+          noData: '没有找到相关内容',
+          depth: 4,
+          hideOtherSidebarContent: false,
+        },
+        pagination: {
+          previousText: '上一篇',
+          nextText: '下一篇',
+          crossChapter: true,
+          crossChapterText: true,
+        },
+        plugins: [
+          function (hook) {
+            hook.doneEach(function () {
+              if (window.MathJax && window.MathJax.typesetPromise) {
+                window.MathJax.typesetPromise();
+              }
+            });
+            hook.afterEach(function (html) {
+              return html + '<footer class="paper-footer">© 王毅乐 Yile Wang · 个人学术论文集</footer>';
+            });
+          },
+        ],
+      };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify@5.0.0/lib/docsify.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify@5.0.0/lib/plugins/search.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify@5.0.0/lib/plugins/zoom-image.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code@3.0.0/dist/docsify-copy-code.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify-pagination@2.10.1/dist/docsify-pagination.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+  </body>
+</html>

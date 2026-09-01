@@ -42,6 +42,4 @@
 5. Development Phase Identification
 6. Conclusion
 
-{% hint style="info" %}
-PCA 载荷、预测模型设定、指数计算公式和全部结果图表请查看 PDF 原文。
-{% endhint %}
+> **原文说明**：PCA 载荷、预测模型设定、指数计算公式和全部结果图表请查看 PDF 原文。

@@ -4,12 +4,12 @@
 
 ## 在线阅读
 
-- [个人论文集网站](https://yile-wang-research-collection.lasulse20.chatgpt.site)
-- GitBook 内容位于 [`docs/`](docs/README.md)
+- [GitHub Pages 在线论文集](https://karlheinrich-jpg.github.io/yile-wang-research-collection/)
+- 书稿与站点内容位于 [`docs/`](docs/README.md)
 
-## GitBook 同步
+## 发布方式
 
-仓库已经包含 `.gitbook.yaml`、`docs/README.md` 与 `docs/SUMMARY.md`。在 GitBook 中启用 GitHub Sync 后，选择本仓库的 `main` 分支，并以 **GitHub → GitBook** 作为首次同步方向即可。
+论文集采用与 GitBook 相同的 Markdown + 章节目录结构，并由 GitHub Pages 直接发布。`docs/index.html` 提供左侧目录、全文搜索、公式渲染、图片放大和移动端阅读支持；每次更新 `main` 分支的 `docs/` 目录都会自动更新在线版本。
 
 ## 内容保真
 
